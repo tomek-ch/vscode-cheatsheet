@@ -16,7 +16,7 @@ export const App = () => {
         <p className="text-slate-400">
           Skróty klawiszowe których najczęściej używam w VSCode
         </p>
-        <table className="mt-8 w-full text-left text-slate-400">
+        <table className="mt-10 w-full text-left text-slate-400">
           <thead>
             <tr>
               <th colSpan={2} className="pb-4 text-xl font-semibold text-white">

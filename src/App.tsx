@@ -3,6 +3,7 @@ import { ArrowBottom } from "./components/icons/ArrowBottom";
 import { ArrowLeft } from "./components/icons/ArrowLeft";
 import { ArrowRight } from "./components/icons/ArrowRight";
 import { ArrowTop } from "./components/icons/ArrowTop";
+import { MouseCursor } from "./components/icons/MouseCursor";
 import { Key } from "./components/Key";
 import { TableCell } from "./components/TableCell";
 import { TableTitle } from "./components/TableTitle";
@@ -151,6 +152,12 @@ export const App = () => {
               <TableCell>Wyszukiwanie tekstu w otwartym pliku</TableCell>
               <TableCell>
                 <Key>Ctrl</Key> + <Key>F</Key>
+              </TableCell>
+            </tr>
+            <tr>
+              <TableCell>Tworzenie wielu kursorów</TableCell>
+              <TableCell>
+                <Key>Alt</Key> + <MouseCursor />
               </TableCell>
             </tr>
             <tr>

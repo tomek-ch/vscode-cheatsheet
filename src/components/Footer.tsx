@@ -4,7 +4,7 @@ export const Footer = () => {
       <a
         href="https://github.com/tomek-ch"
         target="_href"
-        className="hover:text-blue-500"
+        className="transition-all hover:text-blue-500"
       >
         @tomek-ch
       </a>

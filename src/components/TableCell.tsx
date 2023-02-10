@@ -5,5 +5,9 @@ type TableCellProps = {
 };
 
 export const TableCell = ({ children }: TableCellProps) => {
-  return <td className="py-3 px-4">{children}</td>;
+  return (
+    <td className="py-3">
+      <div className="border-b border-slate-800 pb-6">{children}</div>
+    </td>
+  );
 };

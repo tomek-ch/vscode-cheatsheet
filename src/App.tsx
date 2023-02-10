@@ -7,7 +7,6 @@ import { ArrowTop } from "./components/icons/ArrowTop";
 import { MouseCursor } from "./components/icons/MouseCursor";
 import { Key } from "./components/Key";
 import { TableCell } from "./components/TableCell";
-import { TableTitle } from "./components/TableTitle";
 
 export const App = () => {
   return (
@@ -17,14 +16,15 @@ export const App = () => {
         <p className="text-slate-400">
           Skróty klawiszowe których najczęściej używam w VSCode
         </p>
-        <table className="mt-8 w-full text-left">
+        <table className="mt-8 w-full text-left text-slate-400">
           <thead>
             <tr>
-              <TableTitle className="rounded-l-md">Działanie</TableTitle>
-              <TableTitle className="rounded-r-md">Klawisze</TableTitle>
+              <th colSpan={2} className="pb-4 text-xl font-semibold text-white">
+                Kursor
+              </th>
             </tr>
           </thead>
-          <tbody className="text-slate-400">
+          <tbody>
             <tr>
               <TableCell>Zmiana pozycji kursora w tekście</TableCell>
               <TableCell>
@@ -45,6 +45,37 @@ export const App = () => {
                 </Key>
               </TableCell>
             </tr>
+            <tr>
+              <TableCell>Skakanie kursorem po słowach</TableCell>
+              <TableCell>
+                <Key>Ctrl</Key> +{" "}
+                <Key>
+                  <ArrowLeft />
+                </Key>{" "}
+                /{" "}
+                <Key>
+                  <ArrowRight />
+                </Key>
+              </TableCell>
+            </tr>
+            <tr>
+              <TableCell>Tworzenie wielu kursorów</TableCell>
+              <TableCell>
+                <Key>Alt</Key> + <MouseCursor />
+              </TableCell>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th
+                colSpan={2}
+                className="pb-4 pt-8 text-xl font-semibold text-white"
+              >
+                Edytowanie
+              </th>
+            </tr>
+          </thead>
+          <tbody>
             <tr>
               <TableCell>Kopiuj zaznaczony tekst lub linię</TableCell>
               <TableCell>
@@ -93,19 +124,6 @@ export const App = () => {
               </TableCell>
             </tr>
             <tr>
-              <TableCell>Skakanie kursorem po słowach</TableCell>
-              <TableCell>
-                <Key>Ctrl</Key> +{" "}
-                <Key>
-                  <ArrowLeft />
-                </Key>{" "}
-                /{" "}
-                <Key>
-                  <ArrowRight />
-                </Key>
-              </TableCell>
-            </tr>
-            <tr>
               <TableCell>Zaznaczanie tekstu po jednym znaku</TableCell>
               <TableCell>
                 <Key>Shift</Key> +{" "}
@@ -131,40 +149,46 @@ export const App = () => {
                 </Key>
               </TableCell>
             </tr>
+          </tbody>
+          <thead>
             <tr>
-              <TableCell>Wyszukiwanie plików po nazwie</TableCell>
+              <th
+                colSpan={2}
+                className="pb-4 pt-8 text-xl font-semibold text-white"
+              >
+                Interfejs
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <TableCell>Wyszukaj pliki po nazwie</TableCell>
               <TableCell>
                 <Key>Ctrl</Key> + <Key>P</Key>
               </TableCell>
             </tr>
             <tr>
-              <TableCell>Pokazanie/schowanie terminala</TableCell>
-              <TableCell>
-                <Key>Ctrl</Key> + <Key>~</Key>
-              </TableCell>
-            </tr>
-            <tr>
-              <TableCell>Wyszukiwanie tekstu w projekcie</TableCell>
+              <TableCell>Wyszukaj tekst w projekcie</TableCell>
               <TableCell>
                 <Key>Ctrl</Key> + <Key>Shift</Key> + <Key>F</Key>
               </TableCell>
             </tr>
             <tr>
-              <TableCell>Wyszukiwanie tekstu w otwartym pliku</TableCell>
+              <TableCell>Wyszukaj tekst w pliku</TableCell>
               <TableCell>
                 <Key>Ctrl</Key> + <Key>F</Key>
-              </TableCell>
-            </tr>
-            <tr>
-              <TableCell>Tworzenie wielu kursorów</TableCell>
-              <TableCell>
-                <Key>Alt</Key> + <MouseCursor />
               </TableCell>
             </tr>
             <tr>
               <TableCell>Paleta komend</TableCell>
               <TableCell>
                 <Key>Ctrl</Key> + <Key>Shift</Key> + <Key>P</Key>
+              </TableCell>
+            </tr>
+            <tr>
+              <TableCell>Pokaż/schowaj terminal</TableCell>
+              <TableCell>
+                <Key>Ctrl</Key> + <Key>~</Key>
               </TableCell>
             </tr>
           </tbody>

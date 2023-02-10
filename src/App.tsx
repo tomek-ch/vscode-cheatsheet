@@ -12,7 +12,7 @@ export const App = () => {
   return (
     <div className="min-h-full bg-slate-900 selection:bg-amber-300 selection:text-black">
       <Container>
-        <h1 className="py-8 text-2xl font-semibold">Skróty klawiszowe</h1>
+        <h1 className="py-8 text-3xl font-semibold">Skróty klawiszowe</h1>
         <p className="text-slate-400">
           Skróty klawiszowe których najczęściej używam w VSCode
         </p>

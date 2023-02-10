@@ -99,7 +99,7 @@ export const App = () => {
                 </TableCell>
               </tr>
               <tr>
-                <TableCell>
+                <TableCell className="pr-4">
                   Wstaw nową linię na końcu obecnej (działa w środku tekstu)
                 </TableCell>
                 <TableCell>

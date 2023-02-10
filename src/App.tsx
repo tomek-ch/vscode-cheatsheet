@@ -1,4 +1,5 @@
 import { Container } from "./components/Container";
+import { Footer } from "./components/Footer";
 import { ArrowBottom } from "./components/icons/ArrowBottom";
 import { ArrowLeft } from "./components/icons/ArrowLeft";
 import { ArrowRight } from "./components/icons/ArrowRight";
@@ -10,7 +11,7 @@ import { TableTitle } from "./components/TableTitle";
 
 export const App = () => {
   return (
-    <div className="min-h-full bg-slate-900 pb-8 selection:bg-amber-300 selection:text-black">
+    <div className="min-h-full bg-slate-900 selection:bg-amber-300 selection:text-black">
       <Container>
         <h1 className="py-8 text-2xl font-semibold">Skróty klawiszowe</h1>
         <p className="text-slate-400">
@@ -168,6 +169,7 @@ export const App = () => {
             </tr>
           </tbody>
         </table>
+        <Footer />
       </Container>
     </div>
   );
